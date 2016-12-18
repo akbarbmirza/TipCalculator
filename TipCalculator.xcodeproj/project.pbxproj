@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542D8B671E0710A900947017 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D8B661E0710A900947017 /* SettingsViewController.swift */; };
 		547D23C81E06580A00F77268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D23C71E06580A00F77268 /* AppDelegate.swift */; };
 		547D23CA1E06580A00F77268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D23C91E06580A00F77268 /* ViewController.swift */; };
 		547D23CD1E06580A00F77268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547D23CB1E06580A00F77268 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		542D8B661E0710A900947017 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		547D23C41E06580A00F77268 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		547D23C71E06580A00F77268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		547D23C91E06580A00F77268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				547D23C71E06580A00F77268 /* AppDelegate.swift */,
 				547D23C91E06580A00F77268 /* ViewController.swift */,
 				547D23CB1E06580A00F77268 /* Main.storyboard */,
+				542D8B661E0710A900947017 /* SettingsViewController.swift */,
 				547D23CE1E06580A00F77268 /* Assets.xcassets */,
 				547D23D01E06580A00F77268 /* LaunchScreen.storyboard */,
 				547D23D31E06580A00F77268 /* Info.plist */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					547D23C31E06580A00F77268 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 29HC3KS7ZA;
 						ProvisioningStyle = Automatic;
 					};
 					547D23D71E06580A00F77268 = {
@@ -261,6 +265,7 @@
 			files = (
 				547D23CA1E06580A00F77268 /* ViewController.swift in Sources */,
 				547D23C81E06580A00F77268 /* AppDelegate.swift in Sources */,
+				542D8B671E0710A900947017 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29HC3KS7ZA;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbar.TipCalculator;
@@ -422,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29HC3KS7ZA;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbar.TipCalculator;
@@ -503,6 +510,7 @@
 				547D23EE1E06580B00F77268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		547D23EF1E06580B00F77268 /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +519,7 @@
 				547D23F11E06580B00F77268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		547D23F21E06580B00F77268 /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +528,7 @@
 				547D23F41E06580B00F77268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

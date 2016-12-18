@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SettingsViewController.swift
 //  TipCalculator
 //
 //  Created by Akbar Mirza on 12/18/16.
@@ -8,27 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    
-    @IBOutlet weak var tipLabel: UILabel!
-    
-    @IBOutlet weak var totalLabel: UILabel!
-    
-    @IBOutlet weak var billField: UITextField!
-    
+class SettingsViewController: UIViewController {
+
     @IBOutlet weak var tipControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        self.title = "Tip Calculator"
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Do any additional setup after loading the view.
+        self.title = "Settings"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,19 +48,35 @@ class ViewController: UIViewController {
         
         view.endEditing(true)
     }
-    
-    
-    @IBAction func calculateTip(_ sender: Any) {
-        
-        let tipPercentages = [0.18, 0.20, 0.25]
-        
-        let bill = Double(billField.text!) ?? 0
-        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
-        let total = bill + tip
-        
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
-        
-    }
-}
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func setDefaultTip(_ sender: Any) {
+
+        let defaultTip = tipControl.selectedSegmentIndex
+        
+        // Access UserDefaults
+        let defaults = UserDefaults.standard
+        
+        // Set a Double value for some key
+        defaults.set(defaultTip, forKey: "defaultTip")
+        
+        // Force UserDefaults to save.
+        defaults.synchronize()
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
