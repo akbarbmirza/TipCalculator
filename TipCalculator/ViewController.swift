@@ -39,6 +39,9 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         
         tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
+        
+        // calculate the new current tip
+        calculateTip(self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
